@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Directions service</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyC4E7Hb87CK3hYUDLFepiEA9LbR1fhQ4iY&libraries=places" charset="utf-8"></script>
+    <script src="./js/sample2.js"></script>
+    <link rel="stylesheet" href="css/navi_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Noto+Sans|Quicksand:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+        <h2></h2>
+        <h2>Navi application</h2>
+    </header>
+    <main>
+    <div id="floating-panel">
+      <div id="map-search">
+        <h3>ルートを検索</h3>      
+        <div class="menu-content">
+          <a> 出発地: </a>
+          <input type="text" name="sp" id="start" value="現在地" placeholder="出発地を入力"> 
+        </div>  
+        <div class="menu-content">
+          <a> 目的地: </a>
+          <input type="text" name="ep" id="end" placeholder="目的地を入力">
+        </div>      
+        <div class="menu-content pull-center">
+          <input type="submit" name="regist" value="ルートを検索" class="root_btn btn">
+        </div>
+      </div>
+      <div id="root-search">
+        <h3>ルート沿い施設</h3>
+        <div class="menu-content">
+          <a>ジャンル</a>
+          <div>
+            <select id="select_box" class="hover">
+              <option value="0" selected>生活・買い物</option>
+              <option value="1">グルメ</option>
+              <option value="2">自動車</option>
+            </select>
+            <img src="img/sort-right.png" alt="" id="sort-right">
+            <select id="select_subbox" class="hover">
+            </select>
+          </div>
+        </div>
+        <div class="menu-content">
+            <a>ルートから施設の距離</a>
+            <div id="distance">
+            <input type="submit" name="btn" value="もっと近く" class="near_btn btn">
+              <a class="a1">約<a id="merter"></a><a class="a1">m以内</a>
+            <input type="submit" name="btn" value="もっと遠く" class="distant_btn btn">
+            </div>
+        </div>       
+        <div class="menu-content pull-center">
+          <input type="submit" name="btn" value="サーチ" class="search_btn btn">
+        </div>
+      </div>
+    </div>
+    <div id="currentPosition">
+        <img src="img/mylocation.png" alt="">
+    </div>
+    <div id="map"></div>
+    </main>
+  </body>
+</html>
