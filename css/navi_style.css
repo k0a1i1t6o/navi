@@ -1,0 +1,136 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+body{
+  margin: 0;
+}
+
+header{
+  height: 40px;
+  border-bottom: double 3px  grey;
+  margin-top: 20px;
+}
+
+header > h2{
+  font-family: 'Nothing You Could Do', cursive;
+  text-align: center;
+  width: 1500px;
+  margin: 0 auto;
+}
+
+#map{
+  margin-top: 40px;
+  height:680px;
+}
+/* Optional: Makes the sample page fill the window. */
+
+.btn{
+  background-color: rgb(219, 216, 216);
+  border-bottom: solid 2px;
+  color: rgb(102, 95, 95);
+  border-radius: 4px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.hover:hover{
+  cursor: pointer;
+}
+
+.pull-center{
+  text-align: center;
+}
+
+/* .btn{
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #f9a9ae;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  font-weight: bold;
+  background-image: -webkit-linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+  background-image: linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+} */
+
+
+#floating-panel{
+  position: absolute;
+  top: 150px;
+  margin: 10px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 0px;
+  border: 1px solid #999;
+  /* text-align: center; */
+  line-height: 30px;
+  font-family: "Mplus 1p";
+  width: 270px;
+}
+
+#floating-panel h3{
+  font-weight: normal;
+  text-align: center;
+  background-color: rgb(219, 216, 216);
+  margin: 0;
+}
+
+#map-search{
+  margin-bottom: 10px;
+}
+
+#root-search{
+  margin-bottom: 10px;
+}
+
+.menu-content{
+  margin-top: 10px;
+  display: block;
+}
+
+.a1{
+  font-size: 50%;
+}
+
+#merter{
+  font-size: 50%;
+}
+
+#distance{
+  text-align: center;
+}
+
+#sort-right{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+#currentPosition{
+  position: absolute;
+  cursor : pointer;
+  bottom: 180px;
+  right: 0.8%;
+  z-index: 5;
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #999;
+  height: 15px;
+  width: 15px;
+}
+
+#currentPosition > img{
+    height: 15px;
+}
